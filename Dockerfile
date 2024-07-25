@@ -15,7 +15,7 @@ COPY --from=chef /path/to/build/artifacts /app
 
 # Set up permissions
 RUN chmod -R 755 /usr/local/bin
-VOLUME ["/opt/stalwart-mail"]
+#VOLUME ["/opt/stalwart-mail"]
 EXPOSE 443 25 587 465 143 993 4190 8080
 
 # Entry point
